@@ -1,0 +1,167 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   iOi-City Food
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   /* Custom styles for the mobile menu */
+   .mobile-menu {
+     display: none;
+   }
+   .mobile-menu.active {
+     display: block;
+   }
+   .fade-in {
+     opacity: 0;
+     transform: translateY(20px);
+     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+   }
+   .fade-in.show {
+     opacity: 1;
+     transform: translateY(0);
+   }
+  </style>
+ </head>
+ <body class="font-roboto">
+ <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+   <div>
+   <a href="index.html">
+   <img src="asset/logo.png" alt="Logo" class="h-20 w-auto" />
+   </div>
+   <nav class="hidden md:flex space-x-6">
+    <a class="text-gray-700 hover:text-blue-900" href="profil.html">Profile</a>
+    <a class="text-gray-700 hover:text-blue-900" href="halamanproduk.html">Produk</a>
+    <a class="text-gray-700 hover:text-blue-900" href="visimisi.html">Visi & Misi</a>
+    <a class="text-gray-700 hover:text-blue-900" href="lokasi.html">Lokasi Toko</a>
+ </nav>
+ <div class="flex items-center space-x-4">
+    <button class="md:hidden text-gray-700 hover:text-blue-900" id="mobile-menu-button">
+       <i class="fas fa-bars"></i>
+    </button>
+ </div>
+</div>
+<div class="mobile-menu bg-white shadow-md md:hidden" id="mobile-menu">
+ <nav class="flex flex-col space-y-2 p-4">
+    <a class="text-gray-700 hover:text-blue-900" href="profil.html">Profile</a>
+    <a class="text-gray-700 hover:text-blue-900" href="halamanproduk.html">Produk</a>
+    <a class="text-gray-700 hover:text-blue-900" href="visimisi.html">Visi & Misi</a>
+    <a class="text-gray-700 hover:text-blue-900" href="lokasi.html">Lokasi Toko</a>
+ </nav>
+   </div>
+</header>
+  <main class="container mx-auto mt-6 px-6">
+   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="relative fade-in">
+     <img alt="" class="w-full h-full object-cover rounded-lg" height="400" src="asset/bg1.jpg" width="800"/>
+     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-6 rounded-lg">
+      <h2 class="text-3xl font-bold text-center">
+       iOi
+      </h2>
+      <p class="mt-2 text-center">
+       CITY FOOD
+      </p>
+      <p class="mt-2 text-center">
+       MAGETAN - INDONESIA
+      </p>
+     </div>
+    </div>
+    <div class="relative fade-in">
+     <img alt="New Arrival Special Collaboration" class="w-full h-full object-cover rounded-lg" height="400" src="asset/bg4.jpg" width="400"/>
+     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-6 rounded-lg">
+      <h2 class="text-2xl font-bold text-center">
+       iOi
+      </h2>
+      <p class="mt-2 text-center">
+       SINCE
+      </p>
+      <p class="mt-2 text-center">
+       2014
+      </p>
+
+     </div>
+    </div>
+    <div class="relative fade-in">
+     <img alt="Why should you buy on Erigo website" class="w-full h-full object-cover rounded-lg" height="200" src="asset/bg8.jpg" width="400"/>
+     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-6 rounded-lg">
+      <h2 class="text-xl font-bold text-center">
+       KENAPA HARUS BELI DI iOi
+      </h2>
+      <p class="mt-2 text-center">
+      HARGA KAKI LIMA
+      </p>
+      <p class="mt-1 text-center">
+      KUALITAS BINTANG LIMA
+      </p>
+      <button 
+    class="mt-4 bg-white text-black py-2 px-4 rounded" 
+            onclick="window.location.href='halamanproduk.html';">
+            Produk
+        </button>
+
+     </div>
+    </div>
+    <div class="relative fade-in w-full flex justify-center items-center">
+    <img alt="New Arrival Special Collaboration" class="w-full h-auto object-cover rounded-lg" src="produk/nugget.jpg"/>
+    <div class="absolute inset-0 bg-black bg-opacity-20 flex flex-col justify-center items-center text-white p-6 rounded-lg">
+        <!-- You can add content here if needed -->
+    </div>
+</div>
+
+
+  </main>
+  <footer class="bg-white shadow-md mt-6">
+    <div class="container mx-auto py-8 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Tentang Kami</h3>
+          <p class="text-gray-700">iOi City Food adalah toko frozen food yang menyediakan berbagai macam produk makanan beku dengan kualitas terbaik.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Hubungi Kami</h3>
+          <ul class="text-gray-700 space-y-2">
+          <li><a class="hover:text-blue-900" href="https://wa.me/628113503541">Kontak</a></li>
+            <li><a class="hover:text-blue-900" href="lokasi.html">Lokasi Toko</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-700">
+        <p>© 2025 iOi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+   document.getElementById('mobile-menu-button').addEventListener('click', function() {
+     document.getElementById('mobile-menu').classList.toggle('active');
+   });
+
+   function handleScroll() {
+     const elements = document.querySelectorAll('.fade-in');
+     elements.forEach(element => {
+       const rect = element.getBoundingClientRect();
+       if (rect.top < window.innerHeight - 50) {
+         element.classList.add('show');
+       }
+     });
+   }
+
+   window.addEventListener('scroll', handleScroll);
+   document.addEventListener('DOMContentLoaded', handleScroll);
+  </script>
+ </body>
+</html>

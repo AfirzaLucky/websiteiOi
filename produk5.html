@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Pilus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .slideshow-image {
+            display: none;
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .slideshow-image.active {
+        display: block;
+        opacity: 1;
+    }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+<header class="bg-white shadow">
+   <div class="container mx-auto flex items-center justify-between py-4 px-6">
+   <div>
+   <a href="index.html">
+   <img src="asset/logo.png" alt="Logo" class="h-20 w-auto" />
+   </div>
+   </div>
+  </header>
+    <main class="container mx-auto mt-6 px-6">
+    <div class="container mx-auto p-4">
+        <div class="flex flex-col md:flex-row items-center justify-center bg-white shadow-lg rounded-lg p-6">
+            <div class="md:w-1/2 p-4">
+                <div class="slideshow-container">
+                    <img alt="Chicken Garlic sausages with garlic cloves and a product logo" class="slideshow-image active" src="produk/pilus.jpg"/>
+                </div>
+            </div>
+            <div class="md:w-1/2 p-4">
+                <h1 class="text-3xl font-bold mb-4 text-gray-700">iOi</h1>
+                <p class="mb-4 text-gray-600">iOi Pilus terbuat dari bahan pilihan berkualitas yang dipadukan dengan bumbu bawang putih. Pilus bawang putih ini memiliki rasa yang gurih dan tekstur yang renyah, cocok sebagai camilan sehari-hari.</p>
+                <p class="mb-4 text-gray-600">pack: 200gr</p>
+                <p class="mb-4 text-gray-600">
+                Dapatkan produk iOi di sini
+                <a class="text-blue-500 hover:underline" 
+                href="https://wa.me/628113503541?text=" 
+                target="_blank">
+                    Klik Disini
+                </a>, 
+                </p>
+                <div class="mt-4 flex ">
+                <a href="https://wa.me/628113503541?text=" 
+                target="_blank" 
+                class="flex items-center">
+                    <button class="bg-green-500 text-white px-4 py-2 rounded-lg flex items-center shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+                        <i class="fab fa-whatsapp mr-2"></i>
+                        WhatsApp
+                    </button>
+                </a>
+            </div>
+
+            </div>
+        </div>
+        <div class="flex justify-center mt-6 space-x-4">
+    <img alt="Thumbnail image 1" class="thumbnail w-16 h-16 rounded-lg shadow-md transform transition duration-500 hover:scale-105" data-index="0" src="produk/bakso.jpg"/>
+</div>
+    </div>
+    </main>
+    <footer class="bg-white shadow-md mt-6">
+    <div class="container mx-auto py-8 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Tentang Kami</h3>
+          <p class="text-gray-700">iOi City Food adalah toko frozen food yang menyediakan berbagai macam produk makanan beku dengan kualitas terbaik.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Hubungi Kami</h3>
+          <ul class="text-gray-700 space-y-2">
+          <li><a class="hover:text-blue-900" href="https://wa.me/628113503541">Kontak</a></li>
+            <li><a class="hover:text-blue-900" href="lokasi.html">Lokasi Toko</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-700">
+        <p>© 2025 iOi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+    <script>
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slideshow-image');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+
+    function showSlides() {
+        slides.forEach((slide, index) => {
+            slide.classList.remove('active');
+            if (index === slideIndex) {
+                slide.classList.add('active');
+            }
+        });
+    }
+
+    // Perbarui gambar utama saat thumbnail diklik
+    thumbnails.forEach((thumbnail) => {
+        thumbnail.addEventListener('click', () => {
+            slideIndex = parseInt(thumbnail.getAttribute('data-index'));
+            showSlides();
+        });
+    });
+
+    setInterval(() => {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlides();
+    }, 3000); // Interval otomatis tetap 3 detik
+</script>
+</body>
+</html>

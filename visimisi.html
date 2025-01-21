@@ -1,0 +1,119 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   visi & misi
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom styles for the mobile menu */
+   .mobile-menu {
+     display: none;
+   }
+   .mobile-menu.active {
+     display: block;
+   }
+  </style>
+ </head>
+ <body class="font-sans">
+ </head>
+ <body class="font-roboto">
+ <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+   <div>
+   <a href="index.html">
+   <img src="asset/logo.png" alt="Logo" class="h-20 w-auto" />
+   </div>
+
+   <nav class="hidden md:flex space-x-6">
+    <a class="text-gray-700 hover:text-blue-900" href="profil.html">Profile</a>
+    <a class="text-gray-700 hover:text-blue-900" href="halamanproduk.html">Produk</a>
+    <a class="text-gray-700 hover:text-blue-900" href="visimisi.html">Visi & Misi</a>
+    <a class="text-gray-700 hover:text-blue-900" href="lokasi.html">Lokasi Toko</a>
+ </nav>
+ <div class="flex items-center space-x-4">
+    <button class="md:hidden text-gray-700 hover:text-blue-900" id="mobile-menu-button">
+       <i class="fas fa-bars"></i>
+    </button>
+ </div>
+</div>
+<div class="mobile-menu bg-white shadow-md md:hidden" id="mobile-menu">
+ <nav class="flex flex-col space-y-2 p-4">
+    <a class="text-gray-700 hover:text-blue-900" href="profil.html">Profile</a>
+    <a class="text-gray-700 hover:text-blue-900" href="halamanproduk.html">Produk</a>
+    <a class="text-gray-700 hover:text-blue-900" href="visimisi.html">Visi & Misi</a>
+    <a class="text-gray-700 hover:text-blue-900" href="lokasi.html">Lokasi Toko</a>
+ </nav>
+   </div>
+</header>
+
+  <!-- Main Content -->
+  <div class="flex flex-col md:flex-row items-start p-4">
+   <div class="w-full md:w-1/2 p-4">
+    <img alt="ERIGO store front with large sign" class="w-full h-auto" height="400" src="asset/bg2.jpg" width="600"/>
+   </div>
+   <div class="w-full md:w-1/2 p-4">
+    <h1 class="text-xl font-bold text-blue-900">
+     VISI
+    </h1>
+    <p class="text-gray-700 mt-4">
+    Menjadi toko frozen food pilihan utama di desa dengan menyediakan produk berkualitas tinggi dengan harga yang terjangkau untuk semua kalangan.
+    </p>
+   </div>
+   <div class="w-full md:w-1/2 p-4">
+    <h1 class="text-xl font-bold text-blue-900">
+     MISI
+    </h1>
+    <p class="text-gray-700 mt-4">
+    1. Menyediakan berbagai pilihan frozen food berkualitas dengan harga murah dan bersaing.
+    </p>
+    <p>2. Memberikan layanan yang ramah, cepat, dan profesional kepada pelanggan.</p>
+    <p>3. Mendukung perekonomian lokal dengan menyediakan produk yang mudah diakses oleh masyarakat desa.
+    </p>
+    <p>4. Menjaga kesegaran dan keamanan produk melalui sistem penyimpanan yang optimal.
+    </p>
+    <p>5. Meningkatkan kepuasan pelanggan melalui promosi menarik dan program loyalitas.
+    </p>
+   </div>
+  </div>
+  <!-- Chat Button -->
+  </div>
+  <footer class="bg-white shadow-md mt-6">
+    <div class="container mx-auto py-8 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Tentang Kami</h3>
+          <p class="text-gray-700">iOi City Food adalah toko frozen food yang menyediakan berbagai macam produk makanan beku dengan kualitas terbaik.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Hubungi Kami</h3>
+          <ul class="text-gray-700 space-y-2">
+          <li><a class="hover:text-blue-900" href="https://wa.me/628113503541">Kontak</a></li>
+            <li><a class="hover:text-blue-900" href="lokasi.html">Lokasi Toko</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-700">
+        <p>© 2025 iOi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+    <script>
+   document.getElementById('mobile-menu-button').addEventListener('click', function() {
+     document.getElementById('mobile-menu').classList.toggle('active');
+   });
+  </script>
+ </body>
+</html>

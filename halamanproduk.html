@@ -1,0 +1,222 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   iOi City Food
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   /* Custom styles for the mobile menu */
+   .mobile-menu {
+     display: none;
+   }
+   .mobile-menu.active {
+     display: block;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+ <header class="bg-white shadow-md sticky top-0 z-50">
+   <div class="container mx-auto flex justify-between items-center py-4 px-6">
+   <div>
+   <a href="index.html">
+   <img src="asset/logo.png" alt="Logo" class="h-20 w-auto" />
+   </div>
+
+      <nav class="hidden md:flex space-x-6">
+         <a class="text-gray-700 hover:text-blue-900" href="profil.html">Profile</a>
+         <a class="text-gray-700 hover:text-blue-900" href="halamanproduk.html">Produk</a>
+         <a class="text-gray-700 hover:text-blue-900" href="visimisi.html">Visi & Misi</a>
+         <a class="text-gray-700 hover:text-blue-900" href="lokasi.html">Lokasi Toko</a>
+      </nav>
+      <div class="flex items-center space-x-4">
+         <button class="md:hidden text-gray-700 hover:text-blue-900" id="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+         </button>
+      </div>
+   </div>
+   <div class="mobile-menu bg-white shadow-md md:hidden" id="mobile-menu">
+      <nav class="flex flex-col space-y-2 p-4">
+         <a class="text-gray-700 hover:text-blue-900" href="profil.html">Profile</a>
+         <a class="text-gray-700 hover:text-blue-900" href="halamanproduk.html">Produk</a>
+         <a class="text-gray-700 hover:text-blue-900" href="visimisi.html">Visi & Misi</a>
+         <a class="text-gray-700 hover:text-blue-900" href="lokasi.html">Lokasi Toko</a>
+      </nav>
+   </div>
+</header>
+  <main class="container mx-auto mt-6 px-6">
+   <div class="bg-white p-6 rounded-lg shadow">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+     <div class="flex items-center space-x-4">
+      <img alt="" class="h-16 w-16 rounded-full" height="100" src="asset/logo.png" width="100"/>
+      <div>
+       <h1 class="text-2xl font-bold">
+        iOi
+       </h1>
+       <p>
+        CITY FOOD
+       </p>
+       <p class="text-gray-600">
+        MAGETAN - INDONESIA
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center space-x-4 mt-4">
+     <div class="flex items-center text-yellow-500">
+     </div>
+     <div class="text-gray-600">
+     JAM OPERASIONAL TOKO
+     </div>
+     <div class="text-gray-600">
+      06:00 - 18:00
+     </div>
+    </div>
+   </div>
+   <div class="bg-white mt-6 p-6 rounded-lg shadow">
+    <div class="flex items-center border-b pb-4">
+     <button class="text-green-500 border-b-2 border-green-500 pb-2">
+      Produk
+     </button>
+    </div>
+    
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+       <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 1" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/bakso.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         BAKSO
+        </h3>
+        <p class="text-gray-600">
+         Rp20.000
+        </p>
+        <a href="produk1.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+    </a>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 2" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/cuanki.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         CUANKI
+        </h3>
+        <p class="text-gray-600">
+         Rp7.000
+        </p>
+        <a href="produk2.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+        </a>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 3" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/nugget1.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         NUGGET ULIR
+        </h3>
+        <p class="text-gray-600">
+         Rp7.500
+        </p>
+        <a href="produk3.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+        </a>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 4" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/nugget2.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         NUGGET PIPIH
+        </h3>
+        <p class="text-gray-600">
+         Rp7.500
+        </p>
+        <a href="produk4.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+        </a>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 5" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/pilus.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         PILUS
+        </h3>
+        <p class="text-gray-600">
+         Rp7.500
+        </p>
+        <a href="produk5.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+        </a>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 6" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/sempol.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         SEMPOL
+        </h3>
+        <p class="text-gray-600">
+         Rp10.000
+        </p>
+        <a href="produk6.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+        </a>
+       </div>
+       <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 6" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/siomay.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         SIOMAY
+        </h3>
+        <p class="text-gray-600">
+         Rp7.500
+        </p>
+        <a href="produk7.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+        </a>
+      </div>
+      <div class="bg-white p-4 rounded-lg shadow">
+        <img alt="Product 6" class="w-full h-45 object-cover rounded-lg" height="150" src="produk/sosis.jpg" width="200"/>
+        <h3 class="mt-4 font-bold">
+         SOSIS MIE
+        </h3>
+        <p class="text-gray-600">
+         Rp7.500
+        </p>
+        <a href="produk8.html" class="mt-2 bg-green-500 text-white px-4 py-2 rounded-full inline-block text-center">
+        Lihat Produk
+        </a>
+       </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer class="bg-white shadow-md mt-6">
+    <div class="container mx-auto py-8 px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Tentang Kami</h3>
+          <p class="text-gray-700">iOi City Food adalah toko frozen food yang menyediakan berbagai macam produk makanan beku dengan kualitas terbaik.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Hubungi Kami</h3>
+          <ul class="text-gray-700 space-y-2">
+          <li><a class="hover:text-blue-900" href="https://wa.me/628113503541">Kontak</a></li>
+            <li><a class="hover:text-blue-900" href="lokasi.html">Lokasi Toko</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-gray-900 mb-4">Ikuti Kami</h3>
+          <div class="flex space-x-4">
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="text-gray-700 hover:text-blue-900" href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center text-gray-700">
+        <p>© 2025 iOi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+   document.getElementById('mobile-menu-button').addEventListener('click', function() {
+     document.getElementById('mobile-menu').classList.toggle('active');
+   });
+  </script>
+ </body>
+</html>
